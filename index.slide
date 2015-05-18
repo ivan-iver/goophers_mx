@@ -1,0 +1,149 @@
+Pruebas unitarias con Ginkgo
+5 de Mayo 2015
+Tags: go golang
+
+Iván Jaimes
+Go Developer
+ivan@iver.mx
+http://iver.mx/
+@iver14
+https://github.com/ivan-iver
+
+* Quién está presentando?
+
+- Entuciasta de código
+- C#, ASP, JavaScript, Ruby, PHP, Go
+- Backend Developer at Nubleer
+.link http://www.nubleer.com/ Nubleer
+
+* Pruebas Unitarias
+
+- ¿Que es una prueba unitaria?
+- De la audiencia,
+  ¿Que lenguaje de programación usan?
+  ¿Quién usa pruebas unitarias?
+
+* Historia
+
+- TDD - Test Driven Development
+
+  Kent Beck 2002
+  - (the first xUnit framework in Smalltalk I)
+  - Test-first development
+
+- BDD - Behaviour Driven Development
+
+  Dan North 2006
+  - http://dannorth.net/
+
+* Pruebas con "go test"
+
+Ejecución de pruebas
+
+  $ go test
+
+Detalle de la ejecución
+
+  $ go test -v
+
+Ejecución de pruebas independientes
+
+  $ go test -run=ExpReg
+
+Benchmark
+
+  $ go test -bench
+
+  func BenchmarkBigLen(b *testing.B) {
+    big := NewBig()
+       b.ResetTimer()
+       for i := 0; i < b.N; i++ {
+         big.Len()
+       }
+  }
+
+* Ortogonalidad
+
+  Que un conjunto pequeño de elementos primitivos, se pueden
+  combinar en un número relativamente pequeño de maneras para construir el software.
+
+
+
+* Pruebas con "ginkgo"
+
+Instalación
+
+  $ go get github.com/onsi/gomega
+  $ go get github.com/onsi/ginkgo/ginkgo
+
+Crear suite de pruebas
+
+  $ ginkgo bootstrap
+
+Generar prueba unitaria
+
+  $ ginkgo generate
+
+* Instrucciones básicas de ginkgo
+
+- It
+- Describe && Context
+- BeforeEach && AfterEach
+- JustBeforeEach
+- By
+
+* Algunas instrucciones de gomega
+
+- Expect
+- To
+- Equal
+- Should
+- ShouldNot
+
+* Especificaciones Pendientes (Pending Specs)
+
+Permite marcar instrucciones o bloques como pendientes 
+empleando la letra **P* o **X*
+
+  PDescribe("some behavior", func() { ... })
+  PContext("some scenario", func() { ... })
+  PIt("some assertion")
+  PMeasure("some measurement")
+
+  XDescribe("some behavior", func() { ... })
+  XContext("some scenario", func() { ... })
+  XIt("some assertion")
+  XMeasure("some measurement")
+  
+* Enfoque de especificaciones (Focused Specs)
+
+Ejecución de un subconjunto de especificaciones
+
+1) Anteponiendo la letra **F*
+
+  FDescribe("some behavior", func() { ... })
+  FContext("some scenario", func() { ... })
+  FIt("some assertion", func() { ... })
+
+2) Empleando las banderas **--focus=REGEXP* y/o **--skip=REGEXP*
+
+  ginkgo -v --focus="Recibo"
+  ginkgo -v --focus="InApp" --skip="Connect"
+  ginkgo -v --skip="InApp"
+
+* Otro Framework Interesante
+
+- http://agouti.org/
+
+
+* Tips para escribir buenas pruebas unitarias
+
+- Hacer cada prueba ortogonal
+- Evitar enunciados (asserts) innecesarios.
+- Probar una unidad de código a la vez.
+- Hacer “mocks” de los servicios y estados externos.
+- Evitar pre-condiciones innecesarias.
+- Evitar realizar pruebas de archivos de configuración
+- Asignar nombres de manera clara y consistente
+
+
