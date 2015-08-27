@@ -1,0 +1,124 @@
+Go sin pretextos
+5 de Mayo 2015
+Tags: go golang
+
+Iván Jaimes
+Go Developer
+ivan@iver.mx
+http://iver.mx/
+@iver14
+https://github.com/ivan-iver
+
+* Quién está presentando?
+
+- Entuciasta de código
+- C#, ASP, JavaScript, Go, Ruby, PHP
+- Backend Developer at Nubleer
+.link http://www.nubleer.com/ Nubleer
+
+* Entonces ... ¿Que necesitamos para jugar con go?
+
+- Instalarlo
+- Se puede usar The Go Playground [[http://play.golang.org]]
+- Pueden descargar la [[https://github.com/ivan-iver/vagrant_golang][VM]] de un proyecto de vagrant que hice ([[https://github.com/ivan-iver/vagrant_golang]])
+
+* Instalación
+
+- Lo mejor es consultar la [[https://golang.org/doc/install/source][página de instalación]] y de como [[https://golang.org/doc/install/source#gopath][configurar el ambiente de trabajo]]
+
+
+*Pasos*
+
+1. Descargar go:
+
+	$ wget https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz
+
+2. Poner binarios en /usr/local/
+
+	$ sudo tar -xzf go1.4.1.linux-xxx.tar.gz -C /usr/local 
+
+3. Dar permisos a directorio
+
+	$ sudo chmod -R 755 /usr/local/go
+
+4. Asignar variables de entorno
+
+	$  export PATH=$PATH:/usr/local/go/bin
+	$  export GOROOT=/path/to/custom/location
+
+* Configurar el ambiente de trabajo
+
+  Si deseas instalarlo en directorio $HOME/Workspace/
+  - export GOROOT=$HOME/Workspace/go
+  - export PATH=$PATH:$GOROOT/bin
+
+- Una vez realizado esto podrás ver el resultado con el comando:
+  $ go env
+  GOARCH="amd64"
+  GOBIN="/Users/Iver/Workspace/go/bin"
+  GOCHAR="6"
+  GOEXE=""
+  GOHOSTARCH="amd64"
+  GOHOSTOS="darwin"
+  GOOS="darwin"
+  GOPATH="/Users/Iver/Workspace/go"
+  GORACE=""
+  GOROOT="/usr/local/go"
+  GOTOOLDIR="/usr/local/go/pkg/tool/darwin_amd64"
+  CC="clang"
+  GOGCCFLAGS="-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fno-common"
+  CXX="clang++"
+  CGO_ENABLED="1"
+
+* Organización de código
+
+Las _go tools_ requieren que nuestro código este organizado.
+
+  $ tree -L 2
+  go
+  ├── bin
+  ├── pkg
+  └── src
+
+- *bin*: Contiene los ejecutables
+- *pkg*: Paquetes compilados que usamos
+- *src*: Contiene el código de go (generalmente versionado con git)
+
+* Ya que sabemos esto ... mejor usamos una MV
+ 
+Clonamos el repositorio:
+
+  $ git clone https://github.com/ivan-iver/vagrant_golang.git golang 
+  
+Ejecutamos el comando vagrant
+
+  $ cd golang/
+  $ vagrant up --provision
+  $ vagrant ssh
+
+* Pruebas con "go test"
+
+Ejecución de pruebas
+
+  $ go test -v
+
+Ejecución de pruebas independientes
+
+  $ go test -run=ExpReg
+
+Benchmark
+
+  $ go test -bench
+
+  func BenchmarkBigLen(b *testing.B) {
+    big := NewBig()
+       b.ResetTimer()
+       for i := 0; i < b.N; i++ {
+         big.Len()
+       }
+  }
+
+* Gracias
+
+¿ P R E G U N T A S ?
+
