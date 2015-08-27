@@ -67,6 +67,7 @@ Benchmark
   Que un conjunto pequeño de elementos primitivos, se pueden
   combinar en un número relativamente pequeño de maneras para construir el software.
 
+.image ./img/orthogonal.png
 
 
 * Pruebas con "ginkgo"
@@ -102,7 +103,7 @@ Generar prueba unitaria
 
 * Especificaciones Pendientes (Pending Specs)
 
-Permite marcar instrucciones o bloques como pendientes 
+Permite marcar instrucciones o bloques como pendientes
 empleando la letra **P* o **X*
 
   PDescribe("some behavior", func() { ... })
@@ -114,7 +115,7 @@ empleando la letra **P* o **X*
   XContext("some scenario", func() { ... })
   XIt("some assertion")
   XMeasure("some measurement")
-  
+
 * Enfoque de especificaciones (Focused Specs)
 
 Ejecución de un subconjunto de especificaciones
