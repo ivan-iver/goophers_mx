@@ -1,0 +1,3 @@
+[submodule "golang/sass_hugo/learn_sass/themes/hugo-webslides"]
+	path = golang/sass_hugo/learn_sass/themes/hugo-webslides
+	url = git@github.com:iver/hugo-webslides.git
