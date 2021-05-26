@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en-us" prefix="og: http://ogp.me/ns#">
+
+<head>
+	<meta name="generator" content="Hugo 0.68.3" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <title>Hugo-Webslides</title>
+  
+  <meta name="author" content="Iver">
+  
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet">
+
+  
+  <link rel="stylesheet" type='text/css' media='all' href="css/webslides.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/svg-icons.css">
+  
+
+  
+  <link rel="shortcut icon" sizes="16x16" href="/img/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="/img/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="76x76" href="/img/favicons/favicon-76.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="/img/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="/img/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="/img/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="/img/favicons/favicon-192.png">
+
+  
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+  
+</head>
+
+<body>
+  
+  <main role="main">
+    <article id="webslides">
+      
+
+
+  
+
+      
+      
+      
+
+      
+  
+      <section id="slide1">
+        <span class="background" style="background-image:url('images/catrina.jpg')"></span>
+        <div class="wrap size-70 blurry-bg">
+          <div class="aligncenter">
+
+
+
+<h2 id="aprendiendo-a-usar-sass-con-hugo">Aprendiendo a usar SASS con Hugo</h2>
+
+<p class="text-intro">Maquillando nuestro sitio con <a href="https://sass-lang.com/"><strong>SASS</strong></a>.</p>
+
+<p class="text-link"><a href="https://github.com/iver/hugo-webslides"><svg class="fa-github">
+  <use xlink:href="#fa-github"></use>
+</svg>
+Github</a></p>
+
+ 
+          </div></div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide2">
+        <div class="wrap">
+
+
+
+<h2 id="herramientas"><strong>Herramientas</strong></h2>
+
+<p>Lo que debemos conocer antes de usar <a href="https://gohugo.io/">Hugo</a>.</p>
+
+<ul class="flexblock gallery">
+<li><a href="#slide=2" title="HTML JS CSS">
+  <figure>
+    <img alt="Thumbnail HTML JS CSS" src="/images/friends.png">
+    <figcaption>
+      <h2>HTML JS CSS</h2>
+    </figcaption>
+  </figure>
+</a>
+</li>
+<li><a href="#slide=4" title="SASS">
+  <figure>
+    <img alt="Thumbnail SASS" src="https://cdn.worldvectorlogo.com/logos/node-sass.svg">
+    <figcaption>
+      <h2>SASS</h2>
+    </figcaption>
+  </figure>
+</a>
+</li>
+<li><a href="#slide=10" title="Hugo Site Generator">
+  <figure>
+    <img alt="Thumbnail Hugo Site Generator" src="https://www.datascienceblog.net/post/other/blogdown_hugo_avatar.png">
+    <figcaption>
+      <h2>Hugo</h2>
+    </figcaption>
+  </figure>
+</a>
+</li>
+</ul>
+
+ </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide3">
+        <div class="wrap">
+
+
+
+<h2 id="que-es-hugo"><strong>¿Que es Hugo?</strong></h2>
+
+<ul class="flexblock">
+<li><div>
+  <h3>
+    No es el generador promedio de sitios estáticos
+  </h3>
+  <pre><code>Hugo is not your average static site generator.</code></pre>
+</div>
+</li>
+
+<li><div>
+  <h3>
+    Hugo es un generador de sitios estáticos
+  </h3>
+  <pre><code>  Los archivos HTML estáticos en disco son mucho más fáciles de razonar en comparación con los sitios web basados ​​en servidores y bases de datos.</code></pre>
+</div>
+</li>
+
+<li><div>
+  <h3>
+    Del sitio web de hugo
+  </h3>
+  <pre><code>Hugo es un generador de sitios estáticos rápido y moderno escrito en Go, y diseñado para hacer que la creación de sitios web sea divertida nuevamente.</code></pre>
+</div>
+</li>
+</ul>
+
+ </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide4">
+        <div class="wrap size-40">
+
+
+
+<h3 id="1ro-lo-configuramos"><strong>1ro Lo configuramos</strong></h3>
+
+<p class="text-intro">Se lee de cada proyecto el archivo <strong>config.toml</strong>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://learn.iver.mx/&#34;</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Aprendiendo a usar SASS con hugo&#34;</span>
+<span style="color:#a6e22e">disableKinds</span> = [<span style="color:#e6db74">&#34;sitemap&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span>]
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;slides&#34;</span>
+
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">webslides</span>]
+  <span style="color:#a6e22e">banner</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#a6e22e">slideshow</span> = <span style="color:#66d9ef">true</span>
+  <span style="color:#a6e22e">vertical</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#a6e22e">autoslide</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#a6e22e">changeOnClick</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#a6e22e">disableLoop</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#a6e22e">minWheelDelta</span> = <span style="color:#ae81ff">40</span>
+  <span style="color:#a6e22e">disableNavigateOnScroll</span> = <span style="color:#66d9ef">false</span>
+  <span style="color:#a6e22e">scrollWait</span> = <span style="color:#ae81ff">450</span>
+  <span style="color:#a6e22e">slideOffset</span> = <span style="color:#ae81ff">50</span>
+  <span style="color:#a6e22e">hideIndex</span> = <span style="color:#66d9ef">false</span></code></pre></div>
+ </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide5">
+        <div class="wrap">
+
+
+
+
+          <div class="grid vertical-align">
+            <div class="column">
+
+<h3 id="donde-se-guardan-los-recursos"><strong>Donde se guardan los recursos</strong></h3>
+
+<p>Se pueden leer los recursos en &ldquo;<code>theme/assets</code>&rdquo; o bien en &ldquo;<code>theme/static</code>&rdquo;.</p>
+
+</div>
+            <div class="column">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">├── assets
+│   ├── main.js
+│   ├── css
+│   │   └── style.css
+├── static
+│   ├── css
+│   │   ├── svg-icons.css
+│   │   └── webslides.css
+│   └── js
+│       ├── svg-icons.js
+│       └── webslides.min.js</code></pre></div>
+</div>
+          </div> </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide6">
+        <div class="wrap">
+
+
+
+
+          <div class="grid">
+            <div class="column">
+<pre><code>assets
+├── js
+│   ├── main.js
+│   └── utils.js
+└── css
+    ├── svg-icons.css
+    └── styles.css</code></pre>
+</div>
+            <div class="column">
+
+<h3 id="o-bien-en-la-raíz-del-proyecto">O bien en la raíz del proyecto</h3>
+
+<p>Se puede sobre escribir el contenido de un tema, ya que toma prioridad el archivo de la raíz del sitio.</p>
+
+</div>
+          </div> </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide7">
+        <div class="aligncenter">
+
+
+
+<h2 id="como-se-deben-incluir-los-recursos">Como se deben incluir los recursos</h2>
+
+<p>Se debe hacer uso de los pipes.</p>
+
+<p><code>{{ $style := resources.Get &ldquo;sass/main.scss&rdquo; }}</code></p>
+
+ </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide8">
+        <div class="wrap">
+
+
+
+<h3 id="se-pueden-usar-con-todos-los-recursos">Se pueden usar con todos los recursos</h3>
+
+<h4 id="javascript">JavaScript</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">  {{ $js := resources.Get .link}
+  &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $js.RelPermalink }}&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .signature }}&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;</code></pre></div>
+ </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide9">
+        <div class="wrap">
+
+
+
+<h3 id="se-pueden-usar-con-todos-los-recursos-1">Se pueden usar con todos los recursos</h3>
+
+<h4 id="imágenes">Imágenes</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">  {{- $image := resources.Get “images/logo.jpg” -}}
+
+  // Resize to a width of 600px and preserve ratio
+  {{ $image := $resource.Resize &#34;600x&#34; }}
+
+  // Resize to a height of 400px and preserve ratio
+  {{ $image := $resource.Resize &#34;x400&#34; }}
+
+  // Resize to a width 600px and a height of 400px
+  {{ $image := $resource.Resize &#34;600x400&#34; }}</code></pre></div>
+ </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide10">
+        <div class="wrap">
+
+
+
+<h3 id="se-pueden-usar-con-todos-los-recursos-2">Se pueden usar con todos los recursos</h3>
+
+<h4 id="css">CSS</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">  {{ $sass := resources.Get &#34;sass/main.scss&#34; }}
+  {{ $style := $sass | resources.ToCSS }}
+
+
+  {{ &#34;<span style="color:#75715e">&lt;!-- vendor --&gt;</span>&#34; | safeHTML }}
+  {{ range .Site.Params.vendor.css }}
+      {{ $vendor := resources.Get .link }}
+      &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $vendor.RelPermalink }}&#34;</span> <span style="color:#a6e22e">media</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;screen&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .signature }}&#34;</span>&gt;
+  {{ end }}
+
+  {{ $scssMain := &#34;scss/style.scss&#34;}}
+  {{ &#34;<span style="color:#75715e">&lt;!-- Main Stylesheet --&gt;</span>&#34; | safeHTML }}
+  {{ if .Site.IsServer }}
+  {{/* Note the missing postCSS. This makes it snappier to develop in Chrome, but makes it look sub-optimal in other browsers. */}}
+      {{ $styles := resources.Get $scssMain | toCSS (dict &#34;enableSourceMap&#34; true) }}
+      &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $styles.Permalink }}&#34;</span> <span style="color:#a6e22e">media</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;screen&#34;</span>&gt;
+  {{ else }}
+      {{ $styles := resources.Get $scssMain | toCSS (dict &#34;enableSourceMap&#34; false) | minify | fingerprint }}
+      &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;preload&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $styles.RelPermalink }}&#34;</span> <span style="color:#a6e22e">as</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;style&#34;</span>&gt;
+      &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $styles.Permalink }}&#34;</span> <span style="color:#a6e22e">media</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;screen&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $styles.Data.integrity }}&#34;</span>&gt;
+  {{ end }}</code></pre></div>
+ </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide11">
+        <div class="wrap">
+
+
+
+<h3 id="gracias">Gracias!</h3>
+
+<h2 id="preguntas">Preguntas?</h2>
+
+<ul>
+<li><a href="#" title="Preguntas">
+  <figure>
+    <img alt="Thumbnail Preguntas" src="https://www.dondeir.com/wp-content/uploads/2020/05/hugo-gatel-conferencia.jpg">
+    <figcaption>
+      <h2>Preguntas</h2>
+    </figcaption>
+  </figure>
+</a>
+</li>
+</ul>
+ </div>
+      </section>
+  
+
+      
+      
+      
+
+      
+  
+      <section id="slide12">
+        <div class="wrap aligncenter">
+
+
+
+<h1 id="text-landing-good-karma" class="text-landing"> Good Karma</h1>
+
+<p class="text-intro"><a href="http://webslides.tv"><strong>WebSlides</strong></a> &mdash; HTML presentations made easy. <br>
+Hypertext and beauty as narrative elements.</p>
+
+<p><a href="https://twitter.com/webslides">Twitter</a>
+<a href="https://dribbble.com/tags/webslides">Dribble</a>
+<a href="https://github.com/webslides/webslides">Github</a></p>
+
+ </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide13" class="bg-black aligncenter">
+        <span class="background" style="background-image:url('https://source.unsplash.com/OkAAx4mI2Hc/')"></span>
+        <span class="background frame"></span>
+        <div class="wrap fadeInUp">
+
+
+
+<h1 id="everyone-hahahugoshortcode-s0-hbhb-stories">Everyone <svg class="fa-heart-o">
+  <use xlink:href="#fa-heart-o"></use>
+</svg>
+ Stories</h1>
+
+ </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide14">
+        <div class="wrap">
+          <div class="content-center">
+
+
+
+<h2 id="why-webslides"><strong>Why WebSlides?</strong></h2>
+
+<blockquote>
+  <p>"I feel guilty as a web designer when I have to use PowerPoint and Keynote. So I made <a href="https://twitter.com/search?q=%23webslides&amp;src=typd">#WebSlides</a>."</p>
+  <p><cite> <img class="avatar-40" src="https://raw.githubusercontent.com/webslides/WebSlides/master/static/images/avatar.jpg" alt="Avatar"> <a href="http://twitter.com/jlantunez/">@jlantunez</a>.</cite></p>
+</blockquote>
+
+ 
+          </div></div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide15">
+        <div class="wrap">
+
+
+
+
+          <div class="grid vertical-align">
+            <div class="column">
+
+<h3 id="webslides-is-really-easy"><strong>WebSlides is really easy</strong></h3>
+
+<p class="text-intro">Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide.</p>
+
+<p>Code is clean, scalable, and well documented. It uses <strong>intuitive markup</strong> with popular naming conventions. There&rsquo;s no need to overuse classes or nesting. <strong>Based on <a href="https://github.com/jennschiffer/SimpleSlides">SimpleSlides</a>, by <a href="http://jennmoney.biz">Jenn Schiffer</a></strong> :)</p>
+
+</div>
+            <div class="column">
+
+<pre>&lt;article id="webslides"&gt;
+  <span class="code-comment">&lt;!-- Slide 1 --&gt;</span>
+  &lt;section&gt;
+    &lt;h1&gt;Design for trust&lt;/h1&gt;
+  &lt;/section&gt;
+  <span class="code-comment">&lt;!-- Slide 2 --&gt;</span>
+  &lt;section class="bg-primary"&gt;
+    &lt;div class="wrap"&gt;
+      &lt;h2&gt;.wrap = container (width: 90%)&lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
+</pre>
+
+</div>
+          </div> </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide16">
+        <div class="wrap">
+
+
+
+<div class='content-left'>
+  <h2 id="webslides-was-made-to-inspire-people">WebSlides was made to inspire people.</h2>
+</div>
+
+
+<div class='content-left'>
+  <p>There are excellent presentation tools out there. WebSlides is <strong>an open source solution</strong> for telling stories. Hypertext and beauty as narrative elements.</p>
+</div>
+
+
+<ul class="flexblock features">
+<li><div>
+  <h2>
+    <span>&rarr;</span> Keyboard navigation
+  </h2>
+  with arrow keys.
+</div>
+</li>
+<li><div><h2><svg class="fa-link">
+  <use xlink:href="#fa-link"></use>
+</svg>
+Go to a specific slide</h2>URL: #slide=number</div></li>
+<li><div><h2><svg class="fa-clock-o">
+  <use xlink:href="#fa-clock-o"></use>
+</svg>
+Slide counter</h2>Current/Total number.</div></li>
+</ul>
+
+ </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide17">
+        <div class="wrap">
+
+
+
+<ul class="flexblock features ">
+<li><div>
+  <h2>
+    <span>100<sup>%</sup></span> customizable
+  </h2>
+  Well documented.
+</div>
+</li>
+<li><div>
+  <h2>
+    <span>40<sup>+</sup></span> Beautiful Components
+  </h2>
+  Covers, cards, quotes&hellip;
+</div>
+</li>
+<li><div><h2><svg class="fa-list">
+  <use xlink:href="#fa-list"></use>
+</svg>
+Flexible blocks</h2>with auto-fill and equal height.</div></li>
+<li><div><h2><svg class="fa-text-height">
+  <use xlink:href="#fa-text-height"></use>
+</svg>
+Vertical rhythm</h2>Use multiples of 8.</div></li>
+<li><div><h2><svg class="fa-language">
+  <use xlink:href="#fa-language"></use>
+</svg>
+Fade transition</h2>to all slides.</div></li>
+<li><div>
+  <h2>
+    <span>500<sup>+</sup></span>SVG Icons
+  </h2>
+  Font Awesome Kit.
+</div>
+</li>
+</ul>
+
+ </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide18">
+        <div class="description">
+
+<!--： .wrap -->
+
+
+          <div class="grid vertical-align">
+            <div class="column">
+
+<h3 id="support">Support</h3>
+
+<p>Making a beautiful HTML presentation has never been so rewarding.</p>
+
+
+
+<ul>
+<li><strong>Demos:</strong> <a href="https://webslides.tv/demos/landings">Landings</a> &middot; <a href="https://webslides.tv/demos/portfolios.html">Portfolios</a></li>
+<li><strong>Docs:</strong> <a href="https://webslides.tv/demos/components.html">Components</a> &middot; <a href="https://webslides.tv/demos/classes.html">Classes</a></li>
+<li><strong>Tags:</strong> <a href="https://dribbble.com/tags/webslides">Dribble</a> &middot; <a href="https://instagram.com/webslides">Instagram</a></li>
+</ul>
+
+</div>
+            <div class="column">
+
+<p><a href="https://github.com/webslides/webslides"><img class="aligncenter" src="https://raw.githubusercontent.com/webslides/WebSlides/master/static/images/setup.png" alt="WebSlides Files"></a></p>
+
+</div>
+            <div class="column">
+
+<h3 id="extensible">Extensible</h3>
+
+<p>The best way to inspire with your content is to connect on a personal level:</p>
+
+<ul class="description ">
+<li><strong>Animations:</strong> <a href="https://github.com/daneden/animate.css/">Animate.css</a>.</li>
+<li><strong>Images:</strong> <a href="http://unsplash.com">Unsplash</a>.</li>
+<li><strong>Videos:</strong> <a href="https://pixabay.com/en/videos">Pixabay</a>.</li>
+</ul>
+
+</div>
+          </div> </div>
+      </section>
+      
+      
+      
+
+      
+  
+      <section id="slide19" class="bg-apple aligncenter">
+        <span class="background-right-bottom" style="background-image:url('https://webslides.tv/static/images/tim-cook.png')"></span>
+        <div class="wrap">
+
+
+
+<h2 id="one-more-thing">One more thing&hellip;</h2>
+
+<p class="fadeInUp"><a href="https://webslides.tv/demos/keynote.html">Make your keynote &mdash; <code>.bg-apple</code></a></p>
+ </div>
+      </section>
+  
+ 
+
+      </article>
+  </main>
+
+  
+  <script src="js/webslides.min.js"></script>
+<script>window.ws = new WebSlides({minWheelDelta: 40 ,scrollWait: 450 ,slideOffset: 50 ,});</script>
+<script defer src="js/svg-icons.js"></script>
+
+</body>
+
+</html>
