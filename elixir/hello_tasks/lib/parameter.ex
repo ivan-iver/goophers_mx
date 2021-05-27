@@ -9,7 +9,7 @@ defmodule HelloTasks.Parameter do
           description: String.t()
         }
 
-  schema "parameter_settings" do
+  schema "parameter" do
     field(:name, :string)
     field(:data, :string)
     field(:data_type, :string)

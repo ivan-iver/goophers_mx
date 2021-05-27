@@ -78,8 +78,8 @@ defmodule Mix.Tasks.Add.Parameter do
   end
 
   defp repo do
-    {:ok, _} = Application.ensure_all_started(:lego)
-    [repo] = Application.fetch_env!(:lego, :ecto_repos)
+    {:ok, _} = Application.ensure_all_started(:hello_tasks)
+    [repo] = Application.fetch_env!(:hello_tasks, :ecto_repos)
     repo
   end
 end
