@@ -35,7 +35,7 @@
 
 ## Contenido
 
-* 05/05/2015 [Pruebas unitarias con Ginkgo](/unit_testing): Que son las pruebas unitarias, ejemplos con `go test`, `ginkgo`, `gomega` y algunas buenas prácticas.
-* 26/05/2015 [Go sin pretextos](/vagrant_golang): Como instalar `go`, la organización de los paquetes y el uso de [vagrant-golang](https://github.com/iver/vagrant-golang)
+* 05/05/2015 [Pruebas unitarias con Ginkgo](/golang/unit_testing): Que son las pruebas unitarias, ejemplos con `go test`, `ginkgo`, `gomega` y algunas buenas prácticas.
+* 26/05/2015 [Go sin pretextos](/golang/vagrant_golang): Como instalar `go`, la organización de los paquetes y el uso de [vagrant-golang](https://github.com/iver/vagrant-golang)
 * 11/06/2018 [Unit Test Golang](https://github.com/iver/training_go): Pruebas unitarias. Presentación realizada con [hugo](https://gohugo.io/) (en Inglés)
-* 31/07/2019 [Agilidad y despliegues](/pdf/AgilidadYDespliegues.pdf): Un poco de historia sobre agilidad y como impacta en nuestros despliegues.
+* 31/07/2019 [Agilidad y despliegues](/golang//pdf/AgilidadYDespliegues.pdf): Un poco de historia sobre agilidad y como impacta en nuestros despliegues.
