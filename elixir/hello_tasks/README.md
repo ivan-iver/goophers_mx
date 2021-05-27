@@ -1,21 +1,31 @@
 # HelloTasks
 
-**TODO: Add description**
+Ejemplo creado para el meetup de elixir.
 
-## Installation
+**Objetivo:** Crear tareas personalizadas de mix (mix tasks)
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `hello_tasks` to your list of dependencies in `mix.exs`:
+## Instalación
 
-```elixir
-def deps do
-  [
-    {:hello_tasks, "~> 0.1.0"}
-  ]
-end
+- Clona tu repositorio en tu espacio de trabajo local:                                                                                                                      
+```console                                                                                                  
+$ git clone git@github.com:iver/meetups.git                                                   
+```                                                                                                         
+
+- Ve al directorio del proyecto:
+```console
+$ cd elixir/hello_tasks/
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/hello_tasks](https://hexdocs.pm/hello_tasks).
+- Obten las dependecias y compila
+```console
+$ mix deps.get && mix compile
+```
 
+- Ahora podras ver las tareas personalizadas:
+```console
+$ mix help
+mix                    # Runs the default task (current: "mix run")
+mix add.parameter      # Add parameters to database
+...
+mix hello              # Say hello 
+```

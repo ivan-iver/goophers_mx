@@ -5,7 +5,7 @@ defmodule Mix.Tasks.Hello do
     Outputs `Hello` every time.
   """
 
-  @shortdoc "Say hello meetup people"
+  @shortdoc "Say hello meetup"
 
   def run(_) do
     Mix.shell().info("Hello")
